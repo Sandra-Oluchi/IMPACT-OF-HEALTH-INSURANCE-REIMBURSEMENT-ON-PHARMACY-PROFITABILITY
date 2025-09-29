@@ -1,8 +1,8 @@
 # IMPACT-OF-HEALTH-INSURANCE-REIMBURSEMENT-ON-PHARMACY-PROFITABILITY
 
 # 1. Project Overview
-This project analyzes the impact of National Health Insurance Scheme (NHIS) reimbursements on pharmacy profitability at the Federal Medical Center. 
-The goal was to evaluate whether NHIS cost structures cover operational costs and ensure financial sustainability. 
+This project analyzes the impact of  Health Insurance Scheme (NHIS) reimbursements on pharmacy profitability at the Federal Medical Center. 
+The goal was to evaluate whether Health insurance cost structures cover operational costs and ensure financial sustainability. 
 while still maintaining affordable patient access to essential medicines.
 
 
@@ -30,7 +30,7 @@ Data Attributes Included:
 
 Self-paying patient prices
 
-NHIS reimbursement cost price
+Health Insurance reimbursement cost price
 
 Quantity of items dispensed
 
@@ -44,7 +44,7 @@ Created a manual date column (month/year) in PostgreSQL for time-series analysis
 
 Generated calculated fields, including:
 
-NHIS Sale = NHIS cost × total quantity dispensed
+Health Insurance Sale = NHIS cost × total quantity dispensed
 
 Selling Price = (self-paying price or cost price × 1.3 markup)
 
@@ -52,7 +52,7 @@ Expected Revenue = Selling price × quantity
 
 Expected Profit = Expected Revenue – Selling Price
 
-Profit Margin = (NHIS Sale – cost × quantity) ÷ (cost × quantity)
+Profit Margin = (Health Insurance Sale – cost × quantity) ÷ (cost × quantity)
 
 Checked for missing values (replaced with NULL).
 
@@ -66,7 +66,7 @@ Trend Analysis: Monthly profit/loss trends via line chart.
 
 Drug-Level Analysis: Revenue and profitability comparison across drugs.
 
-Comparative Analysis: NHIS reimbursement price vs. actual acquisition cost.
+Comparative Analysis: Health Insurance reimbursement price vs. actual acquisition cost.
 
 Categorical Analysis: Share of underpriced vs. overpriced drugs.
 
