@@ -1,14 +1,14 @@
 # IMPACT-OF-HEALTH-INSURANCE-REIMBURSEMENT-ON-PHARMACY-PROFITABILITY
 
 # 1. Project Overview
-This project analyzes the impact of National Health Insurance Scheme (NHIS) reimbursements on pharmacy profitability at the Federal Medical Center. 
+This project analyzes the impact of  Health Insurance Scheme (NHIS) reimbursements on pharmacy profitability at the Federal Medical Center. 
 The goal was to evaluate whether NHIS cost structures cover operational costs and ensure financial sustainability. 
 while still maintaining affordable patient access to essential medicines.
 
 
 # 2. Objectives
 
-Assess the profitability of drugs reimbursed under NHIS compared to self-paying patient sales.
+Assess the profitability of drugs reimbursed under Health insurance compared to self-paying patient sales.
 
 Identify high-revenue vs. low-margin drugs to guide formulary and pricing negotiations.
 
@@ -44,7 +44,7 @@ Created a manual date column (month/year) in PostgreSQL for time-series analysis
 
 Generated calculated fields, including:
 
-NHIS Sale = NHIS cost × total quantity dispensed
+Health insurance Sale = NHIS cost × total quantity dispensed
 
 Selling Price = (self-paying price or cost price × 1.3 markup)
 
@@ -52,7 +52,7 @@ Expected Revenue = Selling price × quantity
 
 Expected Profit = Expected Revenue – Selling Price
 
-Profit Margin = (NHIS Sale – cost × quantity) ÷ (cost × quantity)
+Profit Margin = (Health Insurance Sale – cost × quantity) ÷ (cost × quantity)
 
 Checked for missing values (replaced with NULL).
 
@@ -80,7 +80,7 @@ Out of 12 months analyzed, 9 months recorded losses.
 
 February and August were the steepest deficits (>₦2.8M each).
 
-NHIS reimbursements generally failed to cover costs, even with strong sales volumes.
+Health insurance reimbursements generally failed to cover costs, even with strong sales volumes.
 
 6.2 Total Sales by Drug
 
@@ -100,7 +100,7 @@ Profitable drugs: Indapamide, Enoxaparin, Sodium Chloride.
 
 Unprofitable drugs: Essential medicines consistently reimbursed below acquisition cost.
 
-6.5 NHIS Cost vs. Cost Price
+6.5 Health Insurance Cost vs. Cost Price
 
 Drugs like Halothane and Oxaliplatin were reimbursed below the purchase price, guaranteeing losses.
 
